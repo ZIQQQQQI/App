@@ -1,0 +1,6 @@
+# Project exclude paths
+/dao/target/
+/domaine/target/
+/service/target/
+/utlis/target/
+/web/target/
