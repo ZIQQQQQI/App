@@ -12,7 +12,7 @@
 
 
 
-<title>数据 - AdminLTE2定制版</title>
+<title>Back-End</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -166,12 +166,12 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 				<h1>
-					数据管理 <small>数据列表</small>
+					Data Management <small>List</small>
 				</h1>
 				<ol class="breadcrumb">
-					<li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-					<li><a href="#">数据管理</a></li>
-					<li class="active">数据列表</li>
+					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li><a href="#">Data Management</a></li>
+					<li class="active">List</li>
 				</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -182,7 +182,7 @@
 				<!-- .box-body -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">列表</h3>
+						<h3 class="box-title">List</h3>
 					</div>
 
 					<div class="box-body">
@@ -196,19 +196,19 @@
 									<div class="btn-group">
 										<button type="button" class="btn btn-default" title="新建"
 											onclick="location.href='${pageContext.request.contextPath}/pages/product-add.jsp'">
-											<i class="fa fa-file-o"></i> 新建
+											<i class="fa fa-file-o"></i> New
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
-											<i class="fa fa-trash-o"></i> 删除
+											<i class="fa fa-trash-o"></i> Delete
 										</button>
 										<button type="button" class="btn btn-default" title="开启">
-											<i class="fa fa-check"></i> 开启
+											<i class="fa fa-check"></i> Active
 										</button>
 										<button type="button" class="btn btn-default" title="屏蔽">
-											<i class="fa fa-ban"></i> 屏蔽
+											<i class="fa fa-ban"></i> Block
 										</button>
 										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
+											<i class="fa fa-refresh"></i> Refresh
 										</button>
 									</div>
 								</div>
@@ -216,7 +216,7 @@
 							<div class="box-tools pull-right">
 								<div class="has-feedback">
 									<input type="text" class="form-control input-sm"
-										placeholder="搜索"> <span
+										placeholder="Search"> <span
 										class="glyphicon glyphicon-search form-control-feedback"></span>
 								</div>
 							</div>
@@ -231,12 +231,12 @@
 											id="selall" type="checkbox" class="icheckbox_square-blue">
 										</th>
 										<th class="sorting_asc">ID</th>
-										<th class="sorting_desc">订单编号</th>
-										<th class="sorting_asc sorting_asc_disabled">产品名称</th>
-										<th class="sorting_desc sorting_desc_disabled">金额</th>
-										<th class="sorting">下单时间</th>
-										<th class="text-center sorting">订单状态</th>
-										<th class="text-center">操作</th>
+										<th class="sorting_desc">Number</th>
+										<th class="sorting_asc sorting_asc_disabled">Name</th>
+										<th class="sorting_desc sorting_desc_disabled">Price</th>
+										<th class="sorting">Time</th>
+										<th class="text-center sorting">Status</th>
+										<th class="text-center">Option</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -253,9 +253,9 @@
 											<td>${orders.orderTimeStr }</td>
 											<td class="text-center">${orders.orderStatusStr }</td>
 											<td class="text-center">
-												<button type="button" class="btn bg-olive btn-xs">订单</button>
-												<button type="button" class="btn bg-olive btn-xs" onclick="location.href='${pageContext.request.contextPath}/orders/findById.do?id=${orders.id}'">详情</button>
-												<button type="button" class="btn bg-olive btn-xs">编辑</button>
+												<button type="button" class="btn bg-olive btn-xs">Order</button>
+												<button type="button" class="btn bg-olive btn-xs" onclick="location.href='${pageContext.request.contextPath}/orders/findById.do?id=${orders.id}'">Details</button>
+												<button type="button" class="btn bg-olive btn-xs">Modify</button>
 											</td>
 										</tr>
 									</c:forEach>
@@ -278,19 +278,19 @@
 								<div class="form-group form-inline">
 									<div class="btn-group">
 										<button type="button" class="btn btn-default" title="新建">
-											<i class="fa fa-file-o"></i> 新建
+											<i class="fa fa-file-o"></i> New
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
-											<i class="fa fa-trash-o"></i> 删除
+											<i class="fa fa-trash-o"></i> Delete
 										</button>
 										<button type="button" class="btn btn-default" title="开启">
-											<i class="fa fa-check"></i> 开启
+											<i class="fa fa-check"></i> Active
 										</button>
 										<button type="button" class="btn btn-default" title="屏蔽">
-											<i class="fa fa-ban"></i> 屏蔽
+											<i class="fa fa-ban"></i> Block
 										</button>
 										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
+											<i class="fa fa-refresh"></i> Refresh
 										</button>
 									</div>
 								</div>
@@ -298,7 +298,7 @@
 							<div class="box-tools pull-right">
 								<div class="has-feedback">
 									<input type="text" class="form-control input-sm"
-										placeholder="搜索"> <span
+										placeholder="Search"> <span
 										class="glyphicon glyphicon-search form-control-feedback"></span>
 								</div>
 							</div>
@@ -315,32 +315,32 @@
                 <div class="box-footer">
                     <div class="pull-left">
                         <div class="form-group form-inline" >
-                            总共2 页，共14 条数据。 每页
+                            2 pages total,14 rows , Each page
                             <select class="form-control" id="changePageSize" onchange="changePageSize()">
                                 <option>1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
                                 <option>5</option>
-                            </select> 条
+                            </select> rows
                         </div>
                     </div>
 
                     <div class="box-tools pull-right">
                         <div class="pagination">
                             <li>
-                                <a href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=${pageinfo.pageSize}" aria-label="Previous">首页</a>
+                                <a href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=${pageinfo.pageSize}" aria-label="Previous">Home</a>
                             </li>
-                            <li><a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pageNum-1}&size=${pageinfo.pageSize}">上一页</a></li>
+                            <li><a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pageNum-1}&size=${pageinfo.pageSize}">Previous</a></li>
 						  <c:forEach begin="1" end="${pageinfo.pages}" var="pageNum">
 							  <li><a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageNum}&size=${pageinfo.pageSize}">${pageNum}</a></li>
 
 					      </c:forEach>
 
 
-                            <li><a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pageNum+1}&size=${pageinfo.pageSize}">下一页</a></li>
+                            <li><a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pageNum+1}&size=${pageinfo.pageSize}">Next</a></li>
                             <li>
-								<a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pages}&size=${pageinfo.pageSize}" aria-label="Previous">首页</a>
+								<a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pages}&size=${pageinfo.pageSize}" aria-label="Previous">Last</a>
 
 							</li>
                         </ul>
@@ -365,9 +365,7 @@
 			<div class="pull-right hidden-xs">
 				<b>Version</b> 1.0.8
 			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved.
+
 		</footer>
 		<!-- 底部导航 /-->
 

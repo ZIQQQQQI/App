@@ -6,9 +6,9 @@
 <!-- 页面meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>数据 - AdminLTE2定制版</title>
-<meta name="description" content="AdminLTE2定制版">
-<meta name="keywords" content="AdminLTE2定制版">
+<title>Back-End</title>
+<meta name="description" content="AdminLTE2">
+<meta name="keywords" content="AdminLTE2">
 
 <!-- Tell the browser to be responsive to screen width -->
 <meta
@@ -83,10 +83,10 @@
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
-						class="fa fa-dashboard"></i> 首页</a></li>
+						class="fa fa-dashboard"></i>Home</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/product/findAll.do">产品管理</a></li>
-				<li class="active">产品表单</li>
+					href="${pageContext.request.contextPath}/product/findAll.do">Product Management</a></li>
+				<li class="active">List</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -97,20 +97,20 @@
 				<section class="content"> <!--产品信息-->
 
 				<div class="panel panel-default">
-					<div class="panel-heading">产品信息</div>
+					<div class="panel-heading">Product Information</div>
 					<div class="row data-type">
 
-						<div class="col-md-2 title">产品编号</div>
+						<div class="col-md-2 title">Number</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="productNum"
 								placeholder="产品编号" value="">
 						</div>
-						<div class="col-md-2 title">产品名称</div>
+						<div class="col-md-2 title">Name</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="productName"
 								placeholder="产品名称" value="">
 						</div>
-						<div class="col-md-2 title">出发时间</div>
+						<div class="col-md-2 title">Departure Time</div>
 						<div class="col-md-4 data">
 							<div class="input-group date">
 								<div class="input-group-addon">
@@ -122,28 +122,28 @@
 						</div>
 
 
-						<div class="col-md-2 title">出发城市</div>
+						<div class="col-md-2 title">Departure City</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="cityName"
 								placeholder="出发城市" value="">
 						</div>
 
-						<div class="col-md-2 title">产品价格</div>
+						<div class="col-md-2 title">Price</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" placeholder="产品价格"
 								name="productPrice" value="">
 						</div>
 
-						<div class="col-md-2 title">产品状态</div>
+						<div class="col-md-2 title">Status</div>
 						<div class="col-md-4 data">
 							<select class="form-control select2" style="width: 100%"
 								name="productStatus">
-								<option value="0" selected="selected">关闭</option>
-								<option value="1">开启</option>
+								<option value="0" selected="selected">Close</option>
+								<option value="1">Open</option>
 							</select>
 						</div>
 
-						<div class="col-md-2 title rowHeight2x">其他信息</div>
+						<div class="col-md-2 title rowHeight2x">Other Information</div>
 						<div class="col-md-10 data rowHeight2x">
 							<textarea class="form-control" rows="3" placeholder="其他信息"
 								name="productDesc"></textarea>
@@ -153,9 +153,9 @@
 				</div>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon">保存</button>
+					<button type="submit" class="btn bg-maroon">Save</button>
 					<button type="button" class="btn bg-default"
-						onclick="history.back(-1);">返回</button>
+						onclick="history.back(-1);">Back</button>
 				</div>
 				<!--工具栏/--> </section>
 				<!-- 正文区域 /-->
@@ -167,10 +167,7 @@
 		<footer class="main-footer">
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0.8
-		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
+		</div>All rights reserved. </footer>
 		<!-- 底部导航 /-->
 
 	</div>

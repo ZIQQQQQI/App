@@ -5,8 +5,8 @@
 <header class="main-header">
 	<!-- Logo -->
 	<a href="all-admin-index.html" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
-		<span class="logo-mini"><b>数据</b></span> <!-- logo for regular state and mobile devices -->
-		<span class="logo-lg"><b>数据</b>后台管理</span>
+		<span class="logo-mini"><b>Data</b></span> <!-- logo for regular state and mobile devices -->
+		<span class="logo-lg"><b>Data</b>Back-End</span>
 	</a>
 	<!-- Header Navbar: style can be found in header.less -->
 	<nav class="navbar navbar-static-top">
@@ -35,11 +35,11 @@
 						<!-- Menu Footer-->
 						<li class="user-footer">
 							<div class="pull-left">
-								<a href="#" class="btn btn-default btn-flat">修改密码</a>
+								<a href="#" class="btn btn-default btn-flat">Change Password</a>
 							</div>
 							<div class="pull-right">
 								<a href="${pageContext.request.contextPath}/logout.do"
-									class="btn btn-default btn-flat">注销</a>
+									class="btn btn-default btn-flat">Logout</a>
 							</div>
 						</li>
 					</ul></li>

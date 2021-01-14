@@ -12,7 +12,7 @@
 
 
 
-<title>数据 - AdminLTE2定制版</title>
+<title>Back-End</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -166,12 +166,12 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 				<h1>
-					数据管理 <small>数据列表</small>
+					Data Management <small>List</small>
 				</h1>
 				<ol class="breadcrumb">
-					<li><a href="#"><i class="fa fa-dashboard"></i> 首页</a></li>
-					<li><a href="#">数据管理</a></li>
-					<li class="active">数据列表</li>
+					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li><a href="#">Data Management</a></li>
+					<li class="active">List</li>
 				</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -182,7 +182,7 @@
 				<!-- .box-body -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">列表</h3>
+						<h3 class="box-title">List</h3>
 					</div>
 
 					<div class="box-body">
@@ -196,19 +196,19 @@
 									<div class="btn-group">
 										<button type="button" class="btn btn-default" title="新建"
 											onclick="location.href='${pageContext.request.contextPath}/pages/product-add.jsp'">
-											<i class="fa fa-file-o"></i> 新建
+											<i class="fa fa-file-o"></i> New
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
-											<i class="fa fa-trash-o"></i> 删除
+											<i class="fa fa-trash-o"></i> Delete
 										</button>
 										<button type="button" class="btn btn-default" title="开启">
-											<i class="fa fa-check"></i> 开启
+											<i class="fa fa-check"></i> Active
 										</button>
 										<button type="button" class="btn btn-default" title="屏蔽">
-											<i class="fa fa-ban"></i> 屏蔽
+											<i class="fa fa-ban"></i> Block
 										</button>
 										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
+											<i class="fa fa-refresh"></i> Refresh
 										</button>
 									</div>
 								</div>
@@ -231,14 +231,14 @@
 											id="selall" type="checkbox" class="icheckbox_square-blue">
 										</th>
 										<th class="sorting_asc">ID</th>
-										<th class="sorting_desc">编号</th>
-										<th class="sorting_asc sorting_asc_disabled">产品名称</th>
-										<th class="sorting_desc sorting_desc_disabled">出发城市</th>
-										<th class="sorting">出发时间</th>
-										<th class="text-center sorting">产品价格</th>
-										<th class="sorting">产品描述</th>
-										<th class="text-center sorting">状态</th>
-										<th class="text-center">操作</th>
+										<th class="sorting_desc">Number</th>
+										<th class="sorting_asc sorting_asc_disabled">Name</th>
+										<th class="sorting_desc sorting_desc_disabled">Departure City</th>
+										<th class="sorting">Departure Time</th>
+										<th class="text-center sorting">Price</th>
+										<th class="sorting">Description</th>
+										<th class="text-center sorting">Status</th>
+										<th class="text-center">Operation</th>
 									</tr>
 								</thead>
 								<tbody>
@@ -257,9 +257,9 @@
 											<td>${product.productDesc }</td>
 											<td class="text-center">${product.productStatusStr }</td>
 											<td class="text-center">
-												<button type="button" class="btn bg-olive btn-xs">订单</button>
-												<button type="button" class="btn bg-olive btn-xs">详情</button>
-												<button type="button" class="btn bg-olive btn-xs">编辑</button>
+												<button type="button" class="btn bg-olive btn-xs">Order</button>
+												<button type="button" class="btn bg-olive btn-xs">Details</button>
+												<button type="button" class="btn bg-olive btn-xs">Edit</button>
 											</td>
 										</tr>
 									</c:forEach>
@@ -285,16 +285,16 @@
 											<i class="fa fa-file-o"></i> New
 										</button>
 										<button type="button" class="btn btn-default" title="删除">
-											<i class="fa fa-trash-o"></i> 删除
+											<i class="fa fa-trash-o"></i> Delete
 										</button>
 										<button type="button" class="btn btn-default" title="开启">
-											<i class="fa fa-check"></i> 开启
+											<i class="fa fa-check"></i> Active
 										</button>
 										<button type="button" class="btn btn-default" title="屏蔽">
-											<i class="fa fa-ban"></i> 屏蔽
+											<i class="fa fa-ban"></i> Block
 										</button>
 										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
+											<i class="fa fa-refresh"></i> Refresh
 										</button>
 									</div>
 								</div>
@@ -319,27 +319,27 @@
 					<div class="box-footer">
 						<div class="pull-left">
 							<div class="form-group form-inline">
-								总共2 页，共14 条数据。 每页 <select class="form-control">
+								2 pages total,14 rows , Each page <select class="form-control">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
-								</select> 条
+								</select> rows
 							</div>
 						</div>
 
 						<div class="box-tools pull-right">
 							<ul class="pagination">
-								<li><a href="#" aria-label="Previous">首页</a></li>
-								<li><a href="#">上一页</a></li>
+								<li><a href="#" aria-label="Previous">Home</a></li>
+								<li><a href="#">Previous</a></li>
 								<li><a href="#">1</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
 								<li><a href="#">4</a></li>
 								<li><a href="#">5</a></li>
-								<li><a href="#">下一页</a></li>
-								<li><a href="#" aria-label="Next">尾页</a></li>
+								<li><a href="#">Next</a></li>
+								<li><a href="#" aria-label="Next">Last</a></li>
 							</ul>
 						</div>
 

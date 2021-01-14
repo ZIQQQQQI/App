@@ -22,6 +22,8 @@ public class OrdersController {
     public ModelAndView findeById(@RequestParam(name="id",required = true) String id){
         ModelAndView mv=new ModelAndView();
          Orders orders=iOrderService.findById(id);
+         mv.addObject("orders",orders);
+         mv.setViewName("orders-show");
         return mv;
     }
 

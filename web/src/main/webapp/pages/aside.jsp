@@ -12,19 +12,19 @@
 			</div>
 			<div class="pull-left info">
 				<p>xxx</p>
-				<a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+				<a href="#"><i class="fa fa-circle text-success"></i> On line</a>
 			</div>
 		</div>
 
 		<!-- sidebar menu: : style can be found in sidebar.less -->
 		<ul class="sidebar-menu">
-			<li class="header">菜单</li>
+			<li class="header">Menu</li>
 			<li id="admin-index"><a
 				href="${pageContext.request.contextPath}/pages/main.jsp"><i
-					class="fa fa-dashboard"></i> <span>首页</span></a></li>
+					class="fa fa-dashboard"></i> <span>Home</span></a></li>
 
 			<li class="treeview"><a href="#"> <i class="fa fa-cogs"></i>
-					<span>系统管理</span> <span class="pull-right-container"> <i
+					<span>Management System</span> <span class="pull-right-container"> <i
 						class="fa fa-angle-left pull-right"></i>
 				</span>
 
@@ -34,23 +34,23 @@
 
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/user/findAll.do"> <i
-							class="fa fa-circle-o"></i> 用户管理
+							class="fa fa-circle-o"></i> User Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/role/findAll.do"> <i
-							class="fa fa-circle-o"></i> 角色管理
+							class="fa fa-circle-o"></i> Role Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/permission/findAll.do">
-							<i class="fa fa-circle-o"></i> 资源权限管理
+							<i class="fa fa-circle-o"></i> Resourece&Authority Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/sysLog/findAll.do"> <i
-							class="fa fa-circle-o"></i> 访问日志
+							class="fa fa-circle-o"></i> Log Query
 					</a></li>
 				</ul></li>
 			<li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
-					<span>基础数据</span> <span class="pull-right-container"> <i
+					<span>Basic Data</span> <span class="pull-right-container"> <i
 						class="fa fa-angle-left pull-right"></i>
 				</span>
 			</a>
@@ -58,11 +58,11 @@
 
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/product/findAll.do">
-							<i class="fa fa-circle-o"></i> 产品管理
+							<i class="fa fa-circle-o"></i> Product Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=4"> <i
-							class="fa fa-circle-o"></i> 订单管理
+							class="fa fa-circle-o"></i> Order Management
 					</a></li>
 
 				</ul></li>

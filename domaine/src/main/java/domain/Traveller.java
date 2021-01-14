@@ -52,6 +52,14 @@ public class Traveller {
     }
 
     public String getCredentialsTypeStr() {
+
+        if(credentialsType!=null){
+            if(credentialsType==0){
+                credentialsTypeStr="idCard";
+            }else{
+                credentialsTypeStr="passport";
+            }
+        }
         return credentialsTypeStr;
     }
 
@@ -76,6 +84,15 @@ public class Traveller {
     }
 
     public String getTravellerTypeStr() {
+
+        if(travellerType!=null){
+            if(travellerType==0){
+                travellerTypeStr="adult";
+            }else{
+                travellerTypeStr="children";
+            }
+
+        }
         return travellerTypeStr;
     }
 
