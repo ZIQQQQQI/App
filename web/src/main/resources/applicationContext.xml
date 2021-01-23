@@ -20,14 +20,14 @@
     </context:component-scan>
 
     <context:property-placeholder location="classpath:db.properties"/>
-    <!-- 配置连接池 -->
+    <!-- connection pool -->
     <bean id="dataSource" class="com.mchange.v2.c3p0.ComboPooledDataSource">
         <property name="driverClass" value="${jdbc.driver}" />
         <property name="jdbcUrl" value="${jdbc.url}" />
         <property name="user" value="${jdbc.username}" />
         <property name="password" value="${jdbc.password}" />
     </bean>
-    <!-- 把交给IOC管理 SqlSessionFactory -->
+    <!-- ioc to SqlSessionFactory -->
     <bean id="sqlSessionFactory" class="org.mybatis.spring.SqlSessionFactoryBean">
         <property name="dataSource" ref="dataSource" />
         <!-- PageHelper的 -->
@@ -46,15 +46,15 @@
 
     </bean>
 
-    <!-- 扫描dao接口 -->
+    <!-- dap interface -->
     <bean id="mapperScanner" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
         <property name="basePackage" value="dao"/>
     </bean>
 
 
 
-    <!-- 配置Spring的声明式事务管理 -->
-    <!-- 配置事务管理器 -->
+
+    <!-- affaire management -->
     <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
         <property name="dataSource" ref="dataSource"/>
     </bean>
