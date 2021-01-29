@@ -14,6 +14,7 @@ import java.util.List;
 public class ProductController {
     @Autowired
     private IProductService iProductService;
+
     @RequestMapping("/save.do")
     public String save(Product product) throws Exception {
         iProductService.save(product);

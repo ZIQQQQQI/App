@@ -15,11 +15,11 @@
 		http://www.springframework.org/schema/aop/spring-aop.xsd
            ">
 
-    <!-- 扫描controller的注解，别的不扫描 -->
+    <!-- scan controller annotation -->
     <context:component-scan base-package="controller">
     </context:component-scan>
 
-    <!-- 配置视图解析器 -->
+    <!-- config view -->
     <bean id="viewResolver" class="org.springframework.web.servlet.view.InternalResourceViewResolver">
         <!-- JSP文件所在的目录 -->
         <property name="prefix" value="/pages/" />
@@ -27,7 +27,7 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <!-- 设置静态资源不过滤 -->
+    <!-- static resources -->
     <mvc:resources location="/css/" mapping="/css/**" />
     <mvc:resources location="/img/" mapping="/img/**" />
     <mvc:resources location="/js/" mapping="/js/**" />
