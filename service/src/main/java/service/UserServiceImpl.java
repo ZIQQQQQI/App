@@ -19,6 +19,17 @@ public class UserServiceImpl implements IUserService {
     IUser iUser;
 
     @Override
+    public UserInfo findById(String id) {
+        return iUser.findById(id);
+
+    }
+
+    @Override
+    public void save(UserInfo userInfo) {
+        iUser.save(userInfo);
+    }
+
+    @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         UserInfo userInfo=iUser.findByUsername(username);
         User user = new User(userInfo.getUsername(), "{noop}" + userInfo.getPassword(), userInfo.getStatus() == 0 ? false : true, true, true, true, getAuthority(userInfo.getRoles()));
@@ -33,5 +44,9 @@ public class UserServiceImpl implements IUserService {
             list.add(new SimpleGrantedAuthority("ROLE_" + role.getRoleName()));
         }
         return list;
+    }
+
+    public List<UserInfo> findAll() {
+        return iUser.findAll();
     }
 }
