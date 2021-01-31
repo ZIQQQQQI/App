@@ -1,4 +1,4 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
+ <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 <%@taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -79,13 +79,13 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				用户管理 <small>全部用户</small>
+				User Management <small>All Users </small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
-						class="fa fa-dashboard"></i> 首页</a></li>
+						class="fa fa-dashboard"></i> Home</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
+					href="${pageContext.request.contextPath}/user/findAll.do">User Management</a></li>
 
 				<li class="active">全部用户</li>
 			</ol>
@@ -109,11 +109,11 @@
 							<div class="form-group form-inline">
 								<div class="btn-group">
 									<button type="button" class="btn btn-default" title="新建">
-										<i class="fa fa-file-o"></i> 新建
+										<i class="fa fa-file-o"></i> New
 									</button>
 
 									<button type="button" class="btn btn-default" title="刷新">
-										<i class="fa fa-refresh"></i> 刷新
+										<i class="fa fa-refresh"></i> Refresh
 									</button>
 								</div>
 							</div>
@@ -133,8 +133,8 @@
 								class="table table-bordered table-hover dataTable">
 								<thead>
 									<tr>
-										<th>名称</th>
-										<th>描述</th>
+										<th>User</th>
+										<th>Details </th>
 									</tr>
 								</thead>
 
@@ -143,13 +143,13 @@
 								</tr>
 
 								<tbody>
-									<c:forEach items="${user.roles}" var="role">
-										<tr data-tt-id="1" data-tt-parent-id="0">
+									<c:forEach items="${user.roles}" var="role" varStatus="vs">
+										<tr data-tt-id="${vs.index+1}" data-tt-parent-id="0">
 											<td>${role.roleName }</td>
 											<td>${role.roleDesc }</td>
 										</tr>
 										<c:forEach items="${role.permissions}" var="permission">
-											<tr data-tt-id="1-1" data-tt-parent-id="1">
+											<tr data-tt-id="1-1" data-tt-parent-id="${vs.index+1}">
 												<td>${permission.permissionName}</td>
 												<td>${permission.url}</td>
 											</tr>
@@ -212,9 +212,7 @@
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0.8
 		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
+
 		<!-- 底部导航 /-->
 
 	</div>

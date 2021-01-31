@@ -1,10 +1,7 @@
 package dao;
 
 import domain.Role;
-import org.apache.ibatis.annotations.Many;
-import org.apache.ibatis.annotations.Result;
-import org.apache.ibatis.annotations.Results;
-import org.apache.ibatis.annotations.Select;
+import org.apache.ibatis.annotations.*;
 
 import java.util.List;
 
@@ -21,4 +18,10 @@ public interface IRoleDao {
             }
     )
     List<Role> findRoleByUserId(String userId) throws Exception;
+
+    @Select("select* from role")
+    List<Role> findAll();
+
+    @Insert("insert into role values(#{id},#{roleName},#{roleDesc})")
+    void save(Role role);
 }
