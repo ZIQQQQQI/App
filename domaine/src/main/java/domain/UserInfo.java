@@ -61,7 +61,8 @@ public class UserInfo {
     }
 
     public String getStatusStr() {
-        return statusStr;
+
+        return this.status==1 ? "open":"close";
     }
 
     public void setStatusStr(String statusStr) {
