@@ -169,7 +169,7 @@
 					Data Management <small>List</small>
 				</h1>
 				<ol class="breadcrumb">
-					<li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
+					<li><a href="${pageContext.request.contextPath}/pages/main.jsp"><i class="fa fa-dashboard"></i> Home</a></li>
 					<li><a href="#">Data Management</a></li>
 					<li class="active">List</li>
 				</ol>
@@ -274,34 +274,7 @@
 							<!--数据列表/-->
 
 							<!--工具栏-->
-							<div class="pull-left">
-								<div class="form-group form-inline">
-									<div class="btn-group">
-										<button type="button" class="btn btn-default" title="新建">
-											<i class="fa fa-file-o"></i> New
-										</button>
-										<button type="button" class="btn btn-default" title="删除">
-											<i class="fa fa-trash-o"></i> Delete
-										</button>
-										<button type="button" class="btn btn-default" title="开启">
-											<i class="fa fa-check"></i> Active
-										</button>
-										<button type="button" class="btn btn-default" title="屏蔽">
-											<i class="fa fa-ban"></i> Block
-										</button>
-										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> Refresh
-										</button>
-									</div>
-								</div>
-							</div>
-							<div class="box-tools pull-right">
-								<div class="has-feedback">
-									<input type="text" class="form-control input-sm"
-										placeholder="Search"> <span
-										class="glyphicon glyphicon-search form-control-feedback"></span>
-								</div>
-							</div>
+
 							<!--工具栏/-->
 
 						</div>
@@ -315,9 +288,10 @@
                 <div class="box-footer">
                     <div class="pull-left">
                         <div class="form-group form-inline" >
-                            2 pages total,14 rows , Each page
+							Each page
                             <select class="form-control" id="changePageSize" onchange="changePageSize()">
-                                <option>1</option>
+								<option></option>
+                                <option >1</option>
                                 <option>2</option>
                                 <option>3</option>
                                 <option>4</option>
@@ -329,7 +303,7 @@
                     <div class="box-tools pull-right">
                         <div class="pagination">
                             <li>
-                                <a href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=${pageinfo.pageSize}" aria-label="Previous">Home</a>
+                                <a href="${pageContext.request.contextPath}/orders/findAll.do?page=1&size=${pageinfo.pageSize}" aria-label="Previous">First</a>
                             </li>
                             <li><a href="${pageContext.request.contextPath}/orders/findAll.do?page=${pageinfo.pageNum-1}&size=${pageinfo.pageSize}">Previous</a></li>
 						  <c:forEach begin="1" end="${pageinfo.pages}" var="pageNum">

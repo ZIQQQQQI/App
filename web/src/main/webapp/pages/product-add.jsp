@@ -79,7 +79,7 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				产品管理 <small>产品表单</small>
+				Product Management <small>Add</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
@@ -103,12 +103,12 @@
 						<div class="col-md-2 title">Number</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="productNum"
-								placeholder="产品编号" value="">
+								placeholder="Number" value="">
 						</div>
 						<div class="col-md-2 title">Name</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="productName"
-								placeholder="产品名称" value="">
+								placeholder="Name" value="">
 						</div>
 						<div class="col-md-2 title">Departure Time</div>
 						<div class="col-md-4 data">
@@ -125,12 +125,12 @@
 						<div class="col-md-2 title">Departure City</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="cityName"
-								placeholder="出发城市" value="">
+								placeholder="City" value="">
 						</div>
 
 						<div class="col-md-2 title">Price</div>
 						<div class="col-md-4 data">
-							<input type="text" class="form-control" placeholder="产品价格"
+							<input type="text" class="form-control" placeholder="Price"
 								name="productPrice" value="">
 						</div>
 
@@ -145,7 +145,7 @@
 
 						<div class="col-md-2 title rowHeight2x">Other Information</div>
 						<div class="col-md-10 data rowHeight2x">
-							<textarea class="form-control" rows="3" placeholder="其他信息"
+							<textarea class="form-control" rows="3" placeholder="Informations"
 								name="productDesc"></textarea>
 						</div>
 
