@@ -25,6 +25,16 @@ public class PermissionController {
         return "redirect:findAll.do";
     }
 
+    @RequestMapping("/findById")
+    public ModelAndView findById(String id) throws Exception {
+        Permission permission=  iPermissionService.findById(id);
+        ModelAndView mv=new ModelAndView();
+        mv.setViewName("permission-show");
+        mv.addObject("permission",permission);
+        return mv;
+    }
+
+
     @RequestMapping("/findAll.do")
     ModelAndView findAll(){
         ModelAndView mv=new ModelAndView();

@@ -150,8 +150,8 @@
 											<td>${permission.permissionName }</td>
 											<td>${permission.url }</td>
 											<td class="text-center">
-												<a href="${pageContext.request.contextPath}/role/findById.do?id=${permission.id}" class="btn bg-olive btn-xs">Detail</a>
-												<a href="${pageContext.request.contextPath}/user/findUserByIdAndAllRole.do?id=${permission.id}" class="btn bg-olive btn-xs">Add</a>
+												<a href="${pageContext.request.contextPath}/permission/findById.do?id=${permission.id}" class="btn bg-olive btn-xs">Detail</a>
+												<a href="${pageContext.request.contextPath}/permission/findUserByIdAndAllRole.do?id=${permission.id}" class="btn bg-olive btn-xs">Add</a>
 											</td>
 										</tr>
 									</c:forEach>

@@ -20,4 +20,10 @@ public class PermissionServiceImpl implements IPermissionService{
     public void save(Permission permission) {
         iPermissionDao.save(permission);
     }
+
+
+    @Override
+    public Permission findById(String id) throws Exception {
+        return iPermissionDao.findById(id);
+    }
 }

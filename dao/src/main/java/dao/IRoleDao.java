@@ -1,5 +1,6 @@
 package dao;
 
+import domain.Permission;
 import domain.Role;
 import org.apache.ibatis.annotations.*;
 
@@ -24,4 +25,27 @@ public interface IRoleDao {
 
     @Insert("insert into role values(#{id},#{roleName},#{roleDesc})")
     void save(Role role);
+
+    @Select("select * from role where id=#{roleId}")
+    @Results({
+            @Result(id = true,property = "id",column = "id"),
+            @Result(property = "roleName",column = "roleName"),
+            @Result(property = "roleDesc",column = "roleDesc"),
+            @Result(property = "permissions",column = "id",javaType = java.util.List.class,many = @Many(select = "dao.IPermissionDao.findPermissionByRoleId"))
+    })
+    Role findById(String roleId);
+
+    @Select("select * from permission where id not in (select permissionId from role_permission where roleId=#{roleId})")
+    List<Permission> findOtherPermissions(String roleId);
+
+    @Insert("insert into role_permission(roleId,permissionId) values(#{roleId},#{permissionId})")
+    void addPermissionToRole(@Param("roleId") String roleId, @Param("permissionId") String permissionId);
+
+    @Delete("delete from users_role where roleId=#{roleId}")
+    void deleteFromUser_RoleByRoleId(String roleId);
+    @Delete("delete from role_permission where roleId=#{roleId}")
+    void deleteFromRole_PermissionByRoleId(String roleId);
+
+    @Delete("delete from role where id=#{roleId}")
+    void deleteRoleById(String roleId);
 }

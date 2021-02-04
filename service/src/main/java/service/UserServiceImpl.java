@@ -25,6 +25,21 @@ public class UserServiceImpl implements IUserService {
     }
 
     @Override
+    public void addRoleToUser(String userId, String[] roleIds) {
+
+        for(String roleId:roleIds){
+            iUser.addRoleToUser(userId,roleId);
+        }
+    }
+
+    @Override
+    public List<Role> findOtherRoles(String userId) {
+        return iUser.findOtherRoles(userId);
+    }
+
+
+
+    @Override
     public void save(UserInfo userInfo) {
         iUser.save(userInfo);
     }

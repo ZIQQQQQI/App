@@ -15,4 +15,7 @@ public interface IPermissionDao {
 
     @Insert("insert into permission values(#{id},#{permissionName},#{url})")
     void save(Permission permission);
+
+    @Select("select * from permission where id=#{id}")
+    Permission findById(String id) throws Exception;
 }
