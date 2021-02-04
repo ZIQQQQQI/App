@@ -96,7 +96,7 @@
 				<section class="content"> <!-- .box-body -->
 				<div class="box box-primary">
 					<div class="box-header with-border">
-						<h3 class="box-title">列表</h3>
+						<h3 class="box-title">List</h3>
 					</div>
 
 					<div class="box-body">
@@ -113,7 +113,7 @@
 										</button>
 										
 										<button type="button" class="btn btn-default" title="刷新">
-											<i class="fa fa-refresh"></i> 刷新
+											<i class="fa fa-refresh"></i> Refresh
 										</button>
 									</div>
 								</div>
@@ -121,7 +121,7 @@
 							<div class="box-tools pull-right">
 								<div class="has-feedback">
 									<input type="text" class="form-control input-sm"
-										placeholder="搜索"> <span
+										placeholder="Search"> <span
 										class="glyphicon glyphicon-search form-control-feedback"></span>
 								</div>
 							</div>
@@ -150,8 +150,8 @@
 											<td>${permission.permissionName }</td>
 											<td>${permission.url }</td>
 											<td class="text-center">
-												<a href="${pageContext.request.contextPath}/role/findById.do?id=${permission.id}" class="btn bg-olive btn-xs">详情</a>
-												<a href="${pageContext.request.contextPath}/user/findUserByIdAndAllRole.do?id=${permission.id}" class="btn bg-olive btn-xs">添加角色</a>
+												<a href="${pageContext.request.contextPath}/role/findById.do?id=${permission.id}" class="btn bg-olive btn-xs">Detail</a>
+												<a href="${pageContext.request.contextPath}/user/findUserByIdAndAllRole.do?id=${permission.id}" class="btn bg-olive btn-xs">Add</a>
 											</td>
 										</tr>
 									</c:forEach>
@@ -179,27 +179,27 @@
 					<div class="box-footer">
 						<div class="pull-left">
 							<div class="form-group form-inline">
-								总共2 页，共14 条数据。 每页 <select class="form-control">
+								Each Page <select class="form-control">
 									<option>1</option>
 									<option>2</option>
 									<option>3</option>
 									<option>4</option>
 									<option>5</option>
-								</select> 条
+								</select> Rows
 							</div>
 						</div>
 
 						<div class="box-tools pull-right">
 							<ul class="pagination">
-								<li><a href="#" aria-label="Previous">首页</a></li>
-								<li><a href="#">上一页</a></li>
+								<li><a href="#" aria-label="Previous">First</a></li>
+								<li><a href="#">Previous</a></li>
 								<li><a href="#">1</a></li>
 								<li><a href="#">2</a></li>
 								<li><a href="#">3</a></li>
 								<li><a href="#">4</a></li>
 								<li><a href="#">5</a></li>
-								<li><a href="#">下一页</a></li>
-								<li><a href="#" aria-label="Next">尾页</a></li>
+								<li><a href="#">Next</a></li>
+								<li><a href="#" aria-label="Next">Last</a></li>
 							</ul>
 						</div>
 
@@ -218,11 +218,9 @@
 			<!-- 底部导航 -->
 			<footer class="main-footer">
 			<div class="pull-right hidden-xs">
-				<b>Version</b> 1.0.8
+
 			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved. </footer>
+
 			<!-- 底部导航 /-->
 
 		</div>

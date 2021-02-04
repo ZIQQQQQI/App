@@ -86,7 +86,7 @@
 				Order Management <small>All Orders</small>
 			</h1>
 			<ol class="breadcrumb">
-				<li><a href="all-admin-index.html"><i
+				<li><a href="${pageContext.request.contextPath}/pages/main.jsp"><i
 						class="fa fa-dashboard"></i> Home</a></li>
 				<li><a href="all-order-manage-list.html">Order Management</a></li>
 				<li class="active">Details</li>

@@ -42,7 +42,7 @@
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/permission/findAll.do">
-							<i class="fa fa-circle-o"></i> Resourece&Authority Management
+							<i class="fa fa-circle-o"></i> Permission Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/sysLog/findAll.do"> <i

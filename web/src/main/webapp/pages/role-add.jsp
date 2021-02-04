@@ -6,7 +6,7 @@
 <!-- 页面meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>数据 - AdminLTE2定制版</title>
+<title>Back-End</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -79,13 +79,13 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				角色管理 <small>角色表单</small>
+				Role Management <small>Add</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
-						class="fa fa-dashboard"></i> 首页</a></li>
-				<li><a href="${pageContext.request.contextPath}/role/findAll.do">角色管理</a></li>
-				<li class="active">角色表单</li>
+						class="fa fa-dashboard"></i> Home</a></li>
+				<li><a href="${pageContext.request.contextPath}/role/findAll.do">Role Management</a></li>
+				<li class="active">Add</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -96,18 +96,18 @@
 				<section class="content"> <!--产品信息-->
 
 				<div class="panel panel-default">
-					<div class="panel-heading">角色信息</div>
+					<div class="panel-heading">Role Information</div>
 					<div class="row data-type">
 
-						<div class="col-md-2 title">角色名称</div>
+						<div class="col-md-2 title">Role Name</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="roleName"
-								placeholder="角色名称" value="">
+								placeholder="Role Name" value="">
 						</div>
-						<div class="col-md-2 title">角色描述</div>
+						<div class="col-md-2 title">Description</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="roleDesc"
-								placeholder="角色描述" value="">
+								placeholder="Description" value="">
 						</div>
 										
 
@@ -115,9 +115,9 @@
 				</div>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon">保存</button>
+					<button type="submit" class="btn bg-maroon">Save</button>
 					<button type="button" class="btn bg-default"
-						onclick="history.back(-1);">返回</button>
+						onclick="history.back(-1);">Return</button>
 				</div>
 				<!--工具栏/--> </section>
 				<!-- 正文区域 /-->
@@ -130,10 +130,7 @@
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0.8
 		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
-		<!-- 底部导航 /-->
+
 
 	</div>
 
