@@ -87,7 +87,7 @@
 				<li><a
 					href="${pageContext.request.contextPath}/user/findAll.do">User Management</a></li>
 
-				<li class="active">全部用户</li>
+				<li class="active">All</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -96,7 +96,7 @@
 			<section class="content"> <!-- .box-body -->
 			<div class="box box-primary">
 				<div class="box-header with-border">
-					<h3 class="box-title">列表</h3>
+					<h3 class="box-title">List</h3>
 				</div>
 
 				<div class="box-body">
@@ -121,7 +121,7 @@
 						<div class="box-tools pull-right">
 							<div class="has-feedback">
 								<input type="text" class="form-control input-sm"
-									placeholder="搜索"> <span
+									placeholder="Search"> <span
 									class="glyphicon glyphicon-search form-control-feedback"></span>
 							</div>
 						</div>
@@ -171,27 +171,27 @@
 				<div class="box-footer">
 					<div class="pull-left">
 						<div class="form-group form-inline">
-							总共2 页，共14 条数据。 每页 <select class="form-control">
+						Each page <select class="form-control">
 								<option>1</option>
 								<option>2</option>
 								<option>3</option>
 								<option>4</option>
 								<option>5</option>
-							</select> 条
+							</select> rows
 						</div>
 					</div>
 
 					<div class="box-tools pull-right">
 						<ul class="pagination">
-							<li><a href="#" aria-label="Previous">首页</a></li>
-							<li><a href="#">上一页</a></li>
+							<li><a href="#" aria-label="Previous">First</a></li>
+							<li><a href="#">Previous</a></li>
 							<li><a href="#">1</a></li>
 							<li><a href="#">2</a></li>
 							<li><a href="#">3</a></li>
 							<li><a href="#">4</a></li>
 							<li><a href="#">5</a></li>
-							<li><a href="#">下一页</a></li>
-							<li><a href="#" aria-label="Next">尾页</a></li>
+							<li><a href="#">Next</a></li>
+							<li><a href="#" aria-label="Next">Last</a></li>
 						</ul>
 					</div>
 

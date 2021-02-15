@@ -102,12 +102,12 @@
 						<div class="col-md-2 title">Permission</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="permissionName"
-								placeholder="角色名称" value="">
+								placeholder="Role Name" value="">
 						</div>
 						<div class="col-md-2 title">Url</div>
 						<div class="col-md-4 data">
 							<input type="text" class="form-control" name="url"
-								placeholder="角色描述" value="">
+								placeholder="Description" value="">
 						</div>
 										
 
@@ -115,9 +115,9 @@
 				</div>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon">保存</button>
+					<button type="submit" class="btn bg-maroon">Save</button>
 					<button type="button" class="btn bg-default"
-						onclick="history.back(-1);">返回</button>
+						onclick="history.back(-1);">Return</button>
 				</div>
 				<!--工具栏/--> </section>
 				<!-- 正文区域 /-->

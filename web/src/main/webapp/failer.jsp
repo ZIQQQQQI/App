@@ -8,7 +8,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>数据 - AdminLTE2定制版</title>
+<title>Back-End</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -114,8 +114,8 @@
 <header class="main-header">
 	<!-- Logo -->
 	<a href="all-admin-index.html" class="logo"> <!-- mini logo for sidebar mini 50x50 pixels -->
-		<span class="logo-mini"><b>数据</b></span> <!-- logo for regular state and mobile devices -->
-		<span class="logo-lg"><b>数据</b>后台管理</span>
+		<span class="logo-mini"><b>Data</b></span> <!-- logo for regular state and mobile devices -->
+		<span class="logo-lg"><b>Data</b>Back-End</span>
 	</a>
 	<!-- Header Navbar: style can be found in header.less -->
 	<nav class="navbar navbar-static-top">
@@ -131,7 +131,7 @@
 					class="dropdown-toggle" data-toggle="dropdown"> <img
 						src="${pageContext.request.contextPath}/img/user2-160x160.jpg"
 						class="user-image" alt="User Image"> <span class="hidden-xs">
-							未登录
+							Not Login
 					</span>
 
 				</a>
@@ -144,11 +144,11 @@
 						<!-- Menu Footer-->
 						<li class="user-footer">
 							<div class="pull-left">
-								<a href="#" class="btn btn-default btn-flat">修改密码</a>
+								<a href="#" class="btn btn-default btn-flat">Change Password</a>
 							</div>
 							<div class="pull-right">
 								<a href="${pageContext.request.contextPath}/logout.do"
-									class="btn btn-default btn-flat">注销</a>
+									class="btn btn-default btn-flat">Disconnect</a>
 							</div>
 						</li>
 					</ul></li>
@@ -172,21 +172,21 @@
 			</div>
 			<div class="pull-left info">
 				<p>
-					未登录
+					Not login
 				</p>
-				<a href="#"><i class="fa fa-circle text-success"></i> 在线</a>
+				<a href="#"><i class="fa fa-circle text-success"></i> Not Login</a>
 			</div>
 		</div>
 
 		<!-- sidebar menu: : style can be found in sidebar.less -->
 		<ul class="sidebar-menu">
-			<li class="header">菜单</li>
+			<li class="header">Menu</li>
 			<li id="admin-index"><a
 				href="${pageContext.request.contextPath}/pages/main.jsp"><i
-					class="fa fa-dashboard"></i> <span>首页</span></a></li>
+					class="fa fa-dashboard"></i> <span>Home</span></a></li>
 
 			<li class="treeview"><a href="#"> <i class="fa fa-cogs"></i>
-					<span>系统管理</span> <span class="pull-right-container"> <i
+					<span>System Management</span> <span class="pull-right-container"> <i
 						class="fa fa-angle-left pull-right"></i>
 				</span>
 			</a>
@@ -194,22 +194,22 @@
 
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/user/findAll.do"> <i
-							class="fa fa-circle-o"></i> 用户管理
+							class="fa fa-circle-o"></i> User Management
 					</a></li>
 					<li id="system-setting"><a href="${pageContext.request.contextPath}/role/findAll.do">
-							<i class="fa fa-circle-o"></i> 角色管理
+							<i class="fa fa-circle-o"></i> Role Management
 					</a></li>
 					<li id="system-setting"><a href="${pageContext.request.contextPath}/permission/findAll.do">
-							<i class="fa fa-circle-o"></i> 资源权限管理
+							<i class="fa fa-circle-o"></i> Permission Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/sysLog/findAll.do"> <i
-							class="fa fa-circle-o"></i> 访问日志
+							class="fa fa-circle-o"></i> Log
 					</a></li>
 
 				</ul></li>
 			<li class="treeview"><a href="#"> <i class="fa fa-cube"></i>
-					<span>基础数据</span> <span class="pull-right-container"> <i
+					<span>Basic Data</span> <span class="pull-right-container"> <i
 						class="fa fa-angle-left pull-right"></i>
 				</span>
 			</a>
@@ -217,11 +217,11 @@
 
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/product/findAll.do">
-							<i class="fa fa-circle-o"></i> 产品管理
+							<i class="fa fa-circle-o"></i> Product Management
 					</a></li>
 					<li id="system-setting"><a
 						href="${pageContext.request.contextPath}/order/findAll.do?page=1&pageSize=3">
-							<i class="fa fa-circle-o"></i> 订单管理
+							<i class="fa fa-circle-o"></i> Order Management
 					</a></li>
 
 				</ul></li>
@@ -236,12 +236,12 @@
 		<div class="content-wrapper">
 			<!-- Content Header (Page header) -->
 			<section class="content-header">
-				<h1>登录失败 页面</h1>
+				<h1>Login failed</h1>
 
 				<ol class="breadcrumb">
 					<li><a href="${pageContext.request.contextPath}/index.jsp"><i
-							class="fa fa-dashboard"></i> 首页</a></li>
-					<li class="active">登录失败</li>
+							class="fa fa-dashboard"></i> Home</a></li>
+					<li class="active">Login failed</li>
 				</ol>
 
 			</section>
@@ -254,8 +254,8 @@
 					<div class="error-content">
 						
 						<p>
-							登录失败 , 你可以 <a href="${pageContext.request.contextPath}/login.jsp">返回到登录页面</a>
-							重新登录
+							Login failed , you can <a href="${pageContext.request.contextPath}/login.jsp">back to login</a>
+							try again
 						</p>
 
 						
@@ -273,9 +273,7 @@
 			<div class="pull-right hidden-xs">
 				<b>Version</b> 1.0.8
 			</div>
-			<strong>Copyright &copy; 2014-2017 <a
-				href="http://www.itcast.cn">研究院研发部</a>.
-			</strong> All rights reserved.
+			
 		</footer>
 		<!-- 底部导航 /-->
 

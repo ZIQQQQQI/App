@@ -7,7 +7,7 @@
 <!-- 页面meta -->
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<title>数据 - AdminLTE2定制版</title>
+<title>Back-End</title>
 <meta name="description" content="AdminLTE2定制版">
 <meta name="keywords" content="AdminLTE2定制版">
 
@@ -80,14 +80,14 @@
 			<!-- 内容头部 -->
 			<section class="content-header">
 			<h1>
-				用户管理 <small>添加角色表单</small>
+				User Managmement <small>Add role to user</small>
 			</h1>
 			<ol class="breadcrumb">
 				<li><a href="${pageContext.request.contextPath}/index.jsp"><i
-						class="fa fa-dashboard"></i> 首页</a></li>
+						class="fa fa-dashboard"></i> Home</a></li>
 				<li><a
-					href="${pageContext.request.contextPath}/user/findAll.do">用户管理</a></li>
-				<li class="active">添加角色表单</li>
+					href="${pageContext.request.contextPath}/user/findAll.do">User Managmement</a></li>
+				<li class="active">Add</li>
 			</ol>
 			</section>
 			<!-- 内容头部 /-->
@@ -108,8 +108,8 @@
 									<input id="selall" 
 										type="checkbox" class="icheckbox_square-blue"></th>
 									<th class="sorting_asc">ID</th>
-									<th class="sorting">角色名称</th>
-									<th class="sorting">角色描述</th>									
+									<th class="sorting">Role Name</th>
+									<th class="sorting">Description</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -131,9 +131,9 @@
 						</table>
 				<!--订单信息/--> <!--工具栏-->
 				<div class="box-tools text-center">
-					<button type="submit" class="btn bg-maroon">保存</button>
+					<button type="submit" class="btn bg-maroon">Save</button>
 					<button type="button" class="btn bg-default"
-						onclick="history.back(-1);">返回</button>
+						onclick="history.back(-1);">Return</button>
 				</div>
 				<!--工具栏/--> </section>
 				<!-- 正文区域 /-->
@@ -146,9 +146,7 @@
 		<div class="pull-right hidden-xs">
 			<b>Version</b> 1.0.8
 		</div>
-		<strong>Copyright &copy; 2014-2017 <a
-			href="http://www.itcast.cn">研究院研发部</a>.
-		</strong> All rights reserved. </footer>
+
 		<!-- 底部导航 /-->
 
 	</div>
